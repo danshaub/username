@@ -7,7 +7,7 @@ echo "(it must start with a lower case letter)"
 echo "(it must be between 3 and 12 characters long)"
 
 read USR
-while echo $USR | egrep -v "^[a-z][\w^A-Z]{2,11}$" > /dev/null 2>&1
+while echo $USR | egrep -v "^[a-z][a-z0-9_]{2,11}$" > /dev/null 2>&1
 do
 	echo "You must enter a valid Username - please review requirements"
 	echo "Enter a username: "
